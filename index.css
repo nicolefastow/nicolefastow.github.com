@@ -179,6 +179,7 @@ h1{
     border-image-source: linear-gradient(45deg, rgb(0, 126, 143), rgb(66, 250, 189));
     border-image-slice: 1;
     padding: 0 20px;
+    display: grid;
 }
 
 .box h4{
@@ -194,6 +195,7 @@ h1{
 
 .box p{
     color: #fbfbf8;
+    align-self: end;
 }
 
 
