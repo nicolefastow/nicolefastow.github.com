@@ -1,0 +1,411 @@
+/* Font Families */
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Quattrocento+Sans&display=swap');
+
+/* Global */
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Quattrocento Sans', sans-serif;
+    background-color: #fbfbf8;
+}
+
+/*Nav Bar*/
+nav{
+    overflow: hidden;
+    background-color:#0D5B55;
+    color: #fbfbf8;
+    width: 100%;
+    height: 10vh;
+    display: flex;             
+    align-items: center; 
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+
+#name{
+    margin-left: 10%;
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #fbfbf8;
+}
+
+#nav-links{
+    float: right;
+    margin-right: 10%;
+}
+
+#nav-links a{
+    padding-left: 20px;
+    color: #fbfbf8;
+    text-decoration: none;
+}
+
+#nav-links a:hover{
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+	display: flex;
+	height: 90vh;
+    background-image: url("pix/bkg-01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#hero-flex{
+    margin: 0 auto;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+#hero-left{
+    float: left;
+    margin-right: 120px;
+}
+
+#hero-right{
+    float: right;
+    align-content: center;
+}
+
+#hero div div img{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    border: 3px solid #fbfbf8;
+    box-shadow: 1px 1px 30px gray;
+}
+
+button{
+    background-color: #70587C;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #fbfbf8;
+    font-weight: bold;
+    box-shadow: #70587C;
+    border: 3px solid #fbfbf8;
+}
+
+button:hover {
+    color: #70587C;
+    border-color: #70587C;
+    background-color: #fbfbf8;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px gray;
+}
+
+button:active{
+    color: #513e5a;
+    border-color: #513e5a;
+    background-color: #fbf8fb;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px gray;
+}
+
+h1{
+    margin: 0 auto;
+    align-self: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    color: #70587C;
+}
+
+/* Exprience */
+
+#experience{
+    background-color:#0D5B55;
+    padding-top: 100px;
+}
+
+#experience-container{
+    display: flex; 
+    justify-content: center;
+    width: 90%;
+    align-content: center;
+    margin: 0 auto;
+}
+
+#intro{
+    float: left;
+    width: 30%;
+    margin: 50px;
+    align-content: center;
+    justify-content: center;
+}
+
+#intro h2{
+    color: rgb(66, 250, 189);
+    font-size: 2rem;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+#intro p{
+    color: #fbfbf8;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+#experience-details{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: auto auto;
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    width: 70%;
+    justify-content: center;
+    align-content: center;
+}
+
+.box{
+    align-items:center;
+    justify-content:center;
+    border: solid 3px;
+    border-image-source: linear-gradient(45deg, rgb(0, 126, 143), rgb(66, 250, 189));
+    border-image-slice: 1;
+    padding: 0 20px;
+}
+
+.box h4{
+    margin-bottom: 0;
+    color: #68B0AB;
+}
+
+.box h3{
+    margin-top: 5px;
+    color: #fbfbf8;
+    font-size: 1.3rem;
+}
+
+.box p{
+    color: #fbfbf8;
+}
+
+
+/* Skills boxes */
+
+#skills{
+    background-color: #0D5B55;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 150px 50px 50px 30px;
+}
+
+#skills img{
+    height: 50px;
+    margin: 20px;
+}
+
+/* Projects */
+
+#projects{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#projects h2{
+    font-size: 5rem;
+    margin-bottom: 0;
+    font-family: 'Oswald', sans-serif;
+    color: #70587C;
+}
+
+#design-container{
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.design img{
+    display: block;
+    height: 700px;
+    margin: 0 auto;
+}
+
+.design p{
+    display: block;
+    margin-left: 15%;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.design strong{
+    color: #70587C;
+}
+
+/* Other Projects */
+
+#other-projects h3{
+    font-size: 3rem;
+    margin-bottom: 0;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    color: #70587C;
+}
+
+#project-grid{
+    min-height: 100%;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.proj-box{
+    display: flex; 
+    flex-basis: calc(50% - 40px);  
+    justify-content: center;
+    flex-direction: column;
+}
+
+.proj-box img{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+/* Footer */
+
+footer{
+    background-color: #0D5B55;
+    color: #fbfbf8;
+    display: block;
+    padding: 100px 0;
+}
+
+footer h2{
+    font-family: 'Oswald', sans-serif;
+    margin-left: 10%;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+footer p{
+    margin-left: 10%;
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+/* Tablet media */
+@media only screen and (max-width: 1025px) {
+
+#hero-left{
+    padding-left: 10px;
+}
+
+.design img{
+    height: 400px;
+}
+
+}
+
+@media only screen and (max-width: 700px) {
+
+#name{
+    margin: 0 auto;
+    float: none;
+}
+
+#nav-links{
+    display:none;
+}
+
+#hero{
+    display: block;
+    background-image: url("pix/bkg-phone.png");
+}   
+
+#hero-flex{
+    display: block;
+}
+
+#hero-left{
+    display: block;
+    margin-right: 0;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+#hero-right{
+    display: block;
+    float: none;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#hero div div img{
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+    align-self: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+button{
+    margin: 0 auto;
+    padding: 5px 10px;
+    font-size: .8rem;
+    border: 2px solid #fbfbf8;
+    justify-self: center;
+    display: block;
+    margin-top: 10px;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center; 
+}
+
+#experience-container{
+    display: block;
+} 
+
+.design img{
+    height: 300px;
+}
+
+#intro{
+    float: none;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#intro h2{
+    text-align: center;
+}
+
+#experience-details{
+    width: 100%;
+}
+
+.design p{
+    margin-left: 5%;
+}
+
+.proj-box img{
+    height: 300px;
+}
+
+}
