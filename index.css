@@ -173,12 +173,10 @@ h1{
 }
 
 .box{
-    align-items:center;
-    justify-content:center;
     border: solid 3px;
     border-image-source: linear-gradient(45deg, rgb(0, 126, 143), rgb(66, 250, 189));
     border-image-slice: 1;
-    padding: 0 20px;
+    padding: 0 10px;
     display: grid;
 }
 
@@ -188,7 +186,7 @@ h1{
 }
 
 .box h3{
-    margin-top: 5px;
+    margin-top: 3px;
     color: #fbfbf8;
     font-size: 1.3rem;
 }
@@ -216,17 +214,42 @@ h1{
 
 /* Projects */
 
-#projects{
-    justify-content: center;
-    text-align: center;
-    padding-bottom: 100px;
+.green-border img{
+    border: 3.5px solid #0D5B55;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, .2);
+    transition: all .5s ease;
 }
 
-#projects h2{
+.green-border img:hover{
+    border: 3.5px solid #2ab9ad;
+}
+
+.green-title{
+    color: #0D5B55
+}
+
+.purple-title{
+    color: #70587C;
+}
+
+#projects,
+#coding-projects{
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#projects h2,
+#coding-projects h2{
     font-size: 5rem;
     margin-bottom: 0;
     font-family: 'Oswald', sans-serif;
-    color: #70587C;
+}
+
+#git{
+    text-decoration: none;
+    color: #0D5B55;
 }
 
 #design-container{
@@ -236,13 +259,13 @@ h1{
 
 .design img{
     display: block;
-    height: 700px;
+    height: 600px;
     margin: 0 auto;
 }
 
 .design p{
     display: block;
-    margin-left: 15%;
+    margin-left: 20%;
     margin-top: 0;
     margin-bottom: 50px;
 }
@@ -263,7 +286,7 @@ h1{
     color: #70587C;
 }
 
-#project-grid{
+.project-grid{
     min-height: 100%;
     width: 90%;
     display: flex;
@@ -281,11 +304,12 @@ h1{
 }
 
 .proj-box img{
-    height: 400px;
+    width: 600px;
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
+
 
 /* Footer */
 
@@ -322,6 +346,10 @@ footer p{
     height: 400px;
 }
 
+.proj-box img{
+    height: 400px;
+}
+
 }
 
 @media only screen and (max-width: 700px) {
@@ -350,6 +378,7 @@ footer p{
     margin: 0 auto;
     width: 100%;
     justify-content: center;
+    padding-top: 10%;
 }
 
 #hero-right{
@@ -412,7 +441,9 @@ h1{
 }
 
 .proj-box img{
-    height: 250px;
+    height: 200px;
+    width: auto;
 }
+
 
 }
